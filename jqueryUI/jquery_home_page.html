@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h3.draggable").click(function () {
+                $("#draggable").toggle();
+            });
+
+            $("h3.droppable").click(function () {
+                $("#droppable").toggle();
+            });
+
+            $("h3.resizable").click(function () {
+                $("#resizable").toggle();
+            });
+
+            $("h3.selectable").click(function () {
+                $("#selectable").toggle();
+            });
+
+            $("h3.sortable").click(function () {
+                $("#sortable").toggle();
+            });
+
+        });
+    </script>
+
+    <style>
+        header {
+            position: relative;
+        }
+
+        .shopping-mall {
+            position: absolute;
+            bottom: 20px;
+            font-variant: small-caps;
+        }
+
+        .shopping-mall>h1 {
+            font-family: Impact;
+            font-size: 50px;
+            color: white;
+            letter-spacing: 0.3px;
+            text-shadow: 0 0 2px black;
+            padding-bottom: 0px;
+            border-bottom: 1px dotted gray;
+            margin: 0px;
+        }
+
+        .shopping-mall>h5 {
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <div class="shopping-mall">
+                <h1>Jquery UI</h1>
+            </div>
+            <img class="pull-right" src="jquery.png" />
+        </header>
+
+        <div class="row">
+            <h3 class="draggable">Draggable</h3>
+            <p id="draggable" style="display: none;">
+                Enable draggable functionality on any DOM element. Move the draggable object by clicking on it with the
+                mouse and dragging it anywhere within the viewport.
+            </p>
+        </div>
+
+        <div class="row">
+            <h3 class="droppable">Droppable</h3>
+            <p id="droppable" style="display: none;">
+                Enable any DOM element to be droppable, a target for draggable elements.
+            </p>
+        </div>
+
+        <div class="row">
+            <h3 class="resizable">Resizable</h3>
+            <p id="resizable" style="display: none;">
+                Enable any DOM element to be resizable. With the cursor grab the right or bottom border and drag to the
+                desired width or height.
+            </p>
+        </div>
+
+        <div class="row">
+            <h3 class="selectable">Selectable</h3>
+            <p id="selectable" style="display: none;">
+                Enable a DOM element (or group of elements) to be selectable. Draw a box with your cursor to select
+                items. Hold down the Ctrl key to make multiple non-adjacent selections.
+            </p>
+        </div>
+
+        <div class="row">
+            <h3 class="sortable">Sortable</h3>
+            <p id="sortable" style="display: none;">
+                Enable a group of DOM elements to be sortable. Click on and drag an element to a new spot within the
+                list, and the other items will adjust to fit. By default, sortable items share draggable properties.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
